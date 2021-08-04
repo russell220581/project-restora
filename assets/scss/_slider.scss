@@ -1,0 +1,57 @@
+/* Slider Area CSS */
+.home {
+    .home-slider {
+        .slider-wrap {
+            .slide {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 3rem;
+                width: 100%;
+                height: 100vh;
+                padding-top: 8rem;
+
+                .slide-content {
+                    flex: 1 1 40rem;
+
+                    span {
+                        color: $green;
+                        font-size: 2.5rem;
+                    }
+    
+                    h3 {
+                        color: $dark;
+                        font-size: 6rem;
+
+                        @include breakpoint-down(medium) {
+                            font-size: 5rem;
+                        }
+                    }
+    
+                    p {
+                        color: $lite_color;
+                        font-size: 2.2rem;
+                        line-height: 1.5;
+                        padding: 0.5rem 0;
+                    }
+                }
+    
+                .slide-image {
+                    flex: 1 1 40rem;
+                }
+
+                @include breakpoint-up(xlarge) {
+                    padding: 0;
+                    
+                    .slide-content {
+                        flex: 1 1 50rem;
+                    }
+                    .slide-image {
+                        flex: 1 1 50rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+/* Review Area CSS */
+.review {
+    .review-slider {
+        .review-wrap {
+            .review-slide {
+                position: relative;
+                padding: 2rem;
+                border: 0.1rem solid $shadow;
+                border-radius: 0.5rem;
+                box-shadow: $box_shadow;
+
+                .quote {
+                    position: absolute;
+                    top: 2rem;
+                    right: 2rem;
+                    font-size: 5rem;
+                    color: $gray;
+                }
+
+                .review-user {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5rem;
+                    padding-bottom: 1.5rem;
+
+                    img {
+                        width: 7rem;
+                        height: 7rem;
+                        border-radius: 50%;
+                    }
+
+                    .review-info {
+                        h3 {
+                            color: $dark;
+                            font-size: 2rem;
+                            padding-bottom: 0.5rem;
+                        }
+
+                        .stars {
+                            i {
+                                color: $green;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    color: $lite_color;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}

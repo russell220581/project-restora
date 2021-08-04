@@ -1,0 +1,58 @@
+/* Order Area CSS */
+.order {
+    .order-form {
+        background-color: $white;
+        padding: 2rem;
+        width: 100%;
+        max-width: 90rem;
+        margin: 0 auto;
+        border: 0.1rem solid $shadow;
+        border-radius: 0.5rem;
+        box-shadow: $box_shadow;
+
+        .input-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            .input {
+                width: 49%;
+
+                span {
+                    display: block;
+                    color: $lite_color;
+                    font-size: 1.5rem;
+                    padding: 0.5rem 0;
+                }
+
+                input, textarea {
+                    background-color: $gray;
+                    color: $dark;
+                    font-size: 1.6rem;
+                    border-radius: 0.5rem;
+                    width: 100%;
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                    text-transform: none;
+
+                    &:focus {
+                        border: 0.1rem solid $green;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                    min-height: 20rem;
+                }
+            }
+
+            @include breakpoint-down(small) {
+                flex-direction: column;
+
+                .input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
